@@ -8,9 +8,9 @@ function solution(answers) {
     
     //filter함수는 조건에 맞는 요소를 새로 반환하는 함수이다.
     //n은 요소의 값, m은 요소의 index값을 의미한다.
-    var st_c1 = answers.filter((n, m) => n == st1[m]).length;
-    var st_c2 = answers.filter((n, m) => n == st2[m]).length;
-    var st_c3 = answers.filter((n, m) => n == st3[m]).length;
+    var st_c1 = answers.filter((n, m) => n == st1[m % st1.length]).length;
+    var st_c2 = answers.filter((n, m) => n == st2[m % st2.length]).length;
+    var st_c3 = answers.filter((n, m) => n == st3[m % st3.length]).length;
     
     //max함수를 통해서 세개 중 가장 많이 맞춘 사람을 선별한다.
     var st_max = Math.max(st_c1, st_c2, st_c3);
