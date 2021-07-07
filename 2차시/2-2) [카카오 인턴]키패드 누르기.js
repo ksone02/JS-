@@ -1,23 +1,31 @@
 function solution(numbers, hand) {
     var answer = [];
+
+    //키패드의 위치 2차원 배열의 형태로 나타냄
     var key = [[1,4,7,'*'], 
                [2,5,8,0], 
-               [3,6,9,'#']]
+               [3,6,9,'#']];
+
+    //초기 손가락 위치
     var nowL = '*';
     var nowR = '#';
     
     for(var i=0; i < numbers.length; i++) {
+        //1, 4, 7 인 경우 -> L 출력
         if(key[0].includes(numbers[i])) {
             answer[i] = "L";
             nowL = numbers[i];
+        //3, 6, 9 인 경우 -> R 출력
         } else if(key[2].includes(numbers[i])) {
             answer[i] = "R";
             nowR = numbers[i];
         } 
         
+        //2, 5, 8, 0 인 경우
         if(key[1].includes(numbers[i])) {
                 var distL = 0;
                 var distR = 0;
+                //왼쪽 손가락 위치에 따른 거리 계산
                 if(nowL == '*') {
                     if(numbers[i] == 2) {
                         distL = 4;
@@ -92,6 +100,7 @@ function solution(numbers, hand) {
                     }
                 }
                 
+                //오른쪽 손가락 위치에 따른 거리 계산
                 if(nowR == '#') {
                     if(numbers[i] == 2) {
                         distR = 4;
@@ -166,18 +175,24 @@ function solution(numbers, hand) {
                     }
                 }
             
+            //오른쪽 손가락과 왼쪽 손가락에서 부터의 대상까지의 거리가 같을 경우
             if(distL == distR) {
+                //왼손잡이면 L출력
                 if(hand == "left") {
                     answer[i] = "L";
                     nowL = numbers[i];
+                //오른손잡이면 R출력
                 } else if(hand == "right") {
                     answer[i] = "R";
                     nowR = numbers[i];
                 }
+            //거리가 다를 경우
             } else {
+                //오른쪽 손가락 부터의 거리가 더 짧으면 R 출력
                 if(distL > distR) {
                     answer[i] = "R";
                     nowR = numbers[i];
+                //왼쪽 손가락 부터의 거리가 더 짧으면 L 출력
                 } else if(distR > distL) {
                     answer[i] = "L";
                     nowL = numbers[i];
@@ -186,6 +201,7 @@ function solution(numbers, hand) {
         }
     }
     
+    //배열 정리
     return answer.join('');
 }
 

@@ -1,10 +1,8 @@
 function solution(numbers) {
-    var answer = [];
-    
     //2차원 배열 생성
     var arr = new Array(numbers.length);
-    for (var i = 0; i < arr.length; i++) {
-        arr[i] = new Array(numbers.length);
+    for (var l = 0; l < arr.length; l++) {
+        arr[l] = new Array(numbers.length);
     }
     
     //더한 값 2차원 배열에 삽입
