@@ -10,3 +10,8 @@
   - [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
   - [[카카오 인턴] 키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256) 
   - [K번째 수(정렬)](https://programmers.co.kr/learn/courses/30/lessons/42748)
+
+3차시
+  - [예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
+  - [폰켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845) 
+  - [위장](https://programmers.co.kr/learn/courses/30/lessons/42578)
