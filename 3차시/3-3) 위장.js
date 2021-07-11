@@ -33,8 +33,9 @@ function solution(clothes) {
           }
           return all;
     }, {}); //객체 개수 리턴 {:2,:1...}
-    
+
     var obj = Object.values(counted).map(e => e+1).reduce((m,n) => m*n); //(겹쳐입는경우 + 혼자입는경우) * 나머지
-    
+
     return obj - 1; //하나만입는경우
 }
+
