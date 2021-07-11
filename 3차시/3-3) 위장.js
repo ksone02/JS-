@@ -4,14 +4,14 @@ function solution(clothes) {
     var k = clothes.map(e => e.pop());
     
     if(k.length != 1) {
-        var counted = k.reduce(function (allNames, name) {
-          if (name in allNames) {
-            allNames[name]++;
+        var counted = k.reduce(function (all, el) {
+          if (el in all) {
+            all[el]++;
           }
           else {
-            allNames[name] = 1;
+            all[el] = 1;
           }
-          return allNames;
+          return all;
         }, {});
 
         obj = Object.values(counted).reduce((m,n) => m*n);
@@ -24,14 +24,14 @@ function solution(clothes) {
 function solution(clothes) {
     var k = clothes.map(e => e.pop());
     
-    var counted = k.reduce(function (allNames, name) {
-          if (name in allNames) {
-            allNames[name]++;
+    var counted = k.reduce(function (all, el) {
+          if (el in all) {
+            all[el]++;
           }
           else {
-            allNames[name] = 1;
+            all[el] = 1;
           }
-          return allNames;
+          return all;
     }, {});
     
     var obj = Object.values(counted).map(e => e+1).reduce((m,n) => m*n);
