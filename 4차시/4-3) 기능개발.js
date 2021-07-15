@@ -19,7 +19,7 @@ function solution(progresses, speeds) {
             }
         }
         cnt++;
-    }) //forEach말고 splice도 생각해보자
+    }); //forEach말고 splice도 생각해보자
     answer.push(cnt);
     
     return answer;

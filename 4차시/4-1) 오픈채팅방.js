@@ -11,11 +11,11 @@ function solution(record) {
     }
 
     //출력
-    for(var i = 0; i < newArr.length; i++) {
-        if(newArr[i][0] === "Enter") {
-            answer.push(nameCheck[newArr[i][1]] + "님이 들어왔습니다.");
-        } else if(newArr[i][0] === "Leave") {
-            answer.push(nameCheck[newArr[i][1]] + "님이 나갔습니다.");
+    for(var j = 0; j < newArr.length; j++) {
+        if(newArr[j][0] === "Enter") {
+            answer.push(nameCheck[newArr[j][1]] + "님이 들어왔습니다.");
+        } else if(newArr[j][0] === "Leave") {
+            answer.push(nameCheck[newArr[j][1]] + "님이 나갔습니다.");
         }
     }
 
