@@ -1,4 +1,4 @@
-//try1)
+//try1
 function solution(numbers) {
     var answer = 0;
     var numbersSplit = numbers.split("");
@@ -21,7 +21,7 @@ const isPrime = (number) => {
 // 만들 수 있는 숫자의 경우 ==> 순열을 사용하자!
 
 
-//sol2
+//try2
 function solution(numbers) {
     var numbersSplit = numbers.split("");
     var newArr = [];
