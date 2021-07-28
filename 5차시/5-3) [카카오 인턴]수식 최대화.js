@@ -1,6 +1,6 @@
 function solution(expression) {
-    let answer = [];
-    const cases = [
+    var answer = [];
+    var potential = [
         ['-', '*', '+'],
         ['-', '+', '*'],
         ['*', '-', '+'],
@@ -9,18 +9,17 @@ function solution(expression) {
         ['+', '*', '-']
     ];
     
-    for(let i = 0; i < cases.length; i++) {
-        let arr = expression.split(/(\D)/); //정규식 -> 숫자와 연산자 분리
-        for(let j = 0; j < 3; j++) {
-            while(arr.includes(cases[i][j])) {
-                let index = arr.indexOf(cases[i][j]);
-                arr.splice(index-1, 3, (new Function(`return ${arr.slice(index-1, index+2).join('')}`))());
-              // index-1 인덱스에서 3개 삭제 후 new Function 반환값 추가
-              // `${}` -> 안의 문자열 계산 ex) "340+10" => 350반환
+    for(var i = 0; i < potential.length; i++) {
+        var newArr = expression.split(/(\D)/); //숫자 + 특수문자 + 공백
+        for(var j = 0; j < 3; j++) {
+            while(newArr.includes(potential[i][j])) {
+                var index = newArr.indexOf(potential[i][j]);
+                newArr.splice(index-1, 3, eval(newArr.slice(index-1, index+2).join('')));
             }
         }
-        answer.push(arr);
+        answer.push(newArr);
     }
     
-    return Math.max(...answer.map(num => Math.abs(num))); //절댓값 고려, 최댓값 산출
+    return Math.max(...answer.map(v => Math.abs(v)));
 }
+

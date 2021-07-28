@@ -1,18 +1,18 @@
 function solution(numbers, target) {
-    let answer = 0;
-  
-    function dfs(depth, sum) {
-      if (depth === numbers.length) {
-        if (sum === target) {
-          answer += 1;
-        }
-        return;
+  var answer = 0;
+  const dfs = (i, sum) => {
+      if(i === numbers.length) {
+          if (sum === target) {
+              answer++;
+           }
+          return;
       }
-      dfs(depth + 1, sum + numbers[depth]); // 왼쪽
-      dfs(depth + 1, sum - numbers[depth]); // 오른쪽
-    }
+      
+      dfs(i + 1, sum + numbers[i]);
+      dfs(i + 1, sum - numbers[i]);
+  }
+      
+  dfs(0, 0);
   
-    dfs(0, 0);
-  
-    return answer;
-  }//자료구조 dfs, bfs 비교해서 공부해보자
+  return answer;
+}
