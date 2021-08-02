@@ -29,3 +29,21 @@
 - [스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993)
 - [타겟 넘버](https://programmers.co.kr/learn/courses/30/lessons/43165)
 - [[카카오 인턴]수식 최대화](https://programmers.co.kr/learn/courses/30/lessons/67257)
+
+6차시
+
+- [다리를 건너는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) // 못품
+- [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839)
+- [점프와 순간이동](https://programmers.co.kr/learn/courses/30/lessons/12980)
+
+7차시
+
+- [땅따먹기]](https://programmers.co.kr/learn/courses/30/lessons/12913)
+- [H-index](https://programmers.co.kr/learn/courses/30/lessons/42747)
+- [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411)
+
+8차시
+
+- [멀쩡한 사각형](https://programmers.co.kr/learn/courses/30/lessons/62048)
+- [배달](https://programmers.co.kr/learn/courses/30/lessons/12978)
+- [괄호변환](https://programmers.co.kr/learn/courses/30/lessons/60058)
