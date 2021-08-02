@@ -38,7 +38,7 @@
 
 7차시
 
-- [땅따먹기]](https://programmers.co.kr/learn/courses/30/lessons/12913)
+- [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913)
 - [H-index](https://programmers.co.kr/learn/courses/30/lessons/42747)
 - [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411)
 
