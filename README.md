@@ -47,3 +47,11 @@
 - [멀쩡한 사각형](https://programmers.co.kr/learn/courses/30/lessons/62048)
 - [배달](https://programmers.co.kr/learn/courses/30/lessons/12978)
 - [괄호변환](https://programmers.co.kr/learn/courses/30/lessons/60058)
+
+9차시
+
+- [로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484)
+- [순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412)
+- [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
+- [캐시](https://programmers.co.kr/learn/courses/30/lessons/17680)
+- [행렬의 곱셈](https://programmers.co.kr/learn/courses/30/lessons/12949)
